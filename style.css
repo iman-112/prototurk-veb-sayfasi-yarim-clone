@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+
+}
+body , input , textarea , select , button{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+body,html{
+    height: 100%;
+    font-size: 16px;
+    max-height: 100%;
+}
+.header{
+    width: 100%;
+
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: .1px solid rgb(219, 211, 211);
+    border-bottom:.2px solid rgb(219, 211, 211); ;
+}
+
+.a-logo{
+    font-size: 26px;
+    color: #32445a;
+    font-weight: 600;
+}
+
+.change-log{
+    color: #2b354880;
+    font-size: 14px;
+    font-weight: 800;
+}
+.input-search-header input{
+    width: 600px;
+    height:45px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    background-color: #f3f6f9;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.login-header .button{
+    font-size: 16px;
+    background-color: #32445a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.pop-up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background:gray ;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms all;
+}
+.login-header #login-popup{
+    position: absolute;
+    left: -99999px;
+    opacity: 0;
+}
+.login-header #login-popup:checked +.pop-up {
+    opacity: 1;
+    visibility: visible;
+}
+.inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    min-width: 300px;
+    box-sizing: border-box;
+
+}
+.tittle{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.tittle h6{
+    font-size: 15px;
+    font-weight: 500;
+}
+.tittle label{
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+.login-header .button{
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.content-pop-up{
+    padding: 0 15px 15px;
+}
+.content-pop-up ul li{
+    margin-bottom: 15px;
+}
+.content-pop-up input{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.content-pop-up input:focus{
+    outline: 0;
+    border-color: blue;
+}
+.content-pop-up button{
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.main{
+    display: flex;
+    width: 100%;
+}
+.section{
+    width: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px 10px;
+    
+}
+.link-bar{
+    display: flex;
+    flex-direction: column;
+}
+.link-bar a{
+    padding: 10px 12px;
+    font-size: 17px;
+}
+.link-bar span{
+    color: #333333;
+}
+.link-bar a:hover{
+    background: #f3f6f9;
+}
+.home-section-hover{
+    background: #f3f6f9;
+}
+.content{
+    padding: 25px 40px;
+    width: 1267px;
+    height: 670px;
+    border: 5px solid blue;
+}
+.new-bc{
+    padding: 1px .3rem;
+    background-color: red;
+    border-radius: 5px;
+    margin-left: 3rem;
+}
+.new-span{
+color: #fff !important;
+font-size: 12px;
+}
+.lang{
+    margin-top: 2rem;
+}
+.button-app{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.button-app button{
+    width: 220px;
+    height: 45px;
+    background-color: #32445a;
+    color: #fff;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.content-header-text h1{
+    color: #32445a;
+    font-weight: 800;
+    margin-bottom:1rem ;
+}
+.content-header-text p{
+    font-size: 16px;
+    color:rgba(0, 0, 0, 0.685);
+}
